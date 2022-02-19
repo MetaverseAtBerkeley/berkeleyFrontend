@@ -1,0 +1,76 @@
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url(../font/NunitoSans-Regular.ttf);
+}
+
+body {
+  font-family: "Nunito Sans", Verdana, Geneva, Tahoma, sans-serif;
+
+  background-color: #202020;
+  color: #ccc;
+
+  margin: 0;
+}
+
+.threeBoxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .box {
+
+    width: 30%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgb(0, 104, 122);
+
+    .icon {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 15px;
+
+    }
+
+    .icon img {
+      width: 110px;
+    }
+
+    .heading {
+
+      text-align: center;
+      color: black;
+      font-size: 20px;
+
+    }
+
+    .description {
+
+      color: #666;
+      padding: 35px;
+      padding-top: 8px;
+      text-align: justify;
+      font-size: 15px;
+      line-height: 1.5;
+
+    }
+
+  }
+}
+
+@media (max-width: 1000px) {
+  .threeBoxes {
+    flex-direction: column;
+    
+    .box {
+      width: 100%;
+      margin-bottom: 90px;
+    }
+  }  
+}

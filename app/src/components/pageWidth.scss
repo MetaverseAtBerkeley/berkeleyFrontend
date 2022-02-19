@@ -1,0 +1,17 @@
+
+.pageWidth {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1500px) {
+  .pageWidth {
+    width: 1200px;
+  }  
+}
+
+@media (max-width: 1300px) {
+  .pageWidth {
+    width: 80%;
+  }  
+}
