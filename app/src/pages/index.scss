@@ -100,21 +100,13 @@
 
   }
 
-  .clubDescriptionWrapper {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-  }
-
   .clubDescription {
 
     font-size: 20px;
     color: white;
     text-align: justify;
     line-height: 1.5;
-    margin-bottom: 90px;
+    margin-bottom: 50px;
 
   }
 
@@ -184,6 +176,13 @@
 
   }
 
+}
+
+@media (max-width: 1200px) {
+  .js .option .link {
+    float: none;
+    margin-bottom: 40px;
+  }
 }
 
 .cs {

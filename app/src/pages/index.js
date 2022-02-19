@@ -37,10 +37,14 @@ const LandingComponent = () => {
       <div className="lc" id="home">
         <div className="left">
           <div className="title"><Fade up>Metaverse @ Berkeley</Fade></div>
-          <div className="subtitle"><Fade delay={400} up>Constructing a metaverse since 2022</Fade></div>
-          <Fade delay={800} up><div className="buttonParent"><Blob>
-            <div className="button">Join!</div>
-          </Blob></div></Fade> 
+          <div className="subtitle"><Fade delay={400} up>Creating the metaverse at UC Berkeley</Fade></div>
+          <Fade delay={800} up><div className="buttonParent">
+            <a href="https://zubatomic.com/metaverse/redirect" target="_blank">
+              <Blob>
+              <div className="button">Join!</div>
+              </Blob>
+            </a>
+          </div></Fade> 
         </div>
         <div className="right">
           <Roll right>
@@ -63,23 +67,23 @@ const AfterMain = () => {
       <Slide style={{backgroundColor: "#336ee2", paddingTop: "50px", paddingBottom: "50px"}}>
         <div className="title">OUR MISSION</div>
         <div className="clubDescription"><Fade>
-        Upon arriving at Berkeley, students are all faced with the same problem. Many often struggle to form communities beyond their roommates. This leads people to join frats or clubs, further cementing people into communities within their comfort zone. People will likely not explore further during their undergraduate experience. Many people are left feeling like they are not a part of any real community within Berkeley, which can have disastrous effects on mental health. The problem is that students aren’t incentivesed to explore and talk to people that are outside their niche. What we need to be doing is laying down a structure to create new genuine, close-knit communities for as many people  as possible.
+        We aim to harness the power of the metaverse for positive social good and mental health. Through strategies of gamification, Metaverse @ Berkeley will encourage the growth of numerous communities inside Berkeley's large student population. Students searching to meet people and join a community will find a home at M@B. <br />
         </Fade></div>
         <div className="threeBoxes">
           <Fade up><div className="box">
             <div className="icon"><img src={communitySVG}></img></div>
             <div className="heading">Community</div>
-            <div className="description">The psychology of communities is clear. If you give people a good enough excuse, they will meet. Give them similar interests, beliefs, values, personalities or goals and they will talk, bond and form deep relationships far into the future.</div>
+            <div className="description">We are a community-first organization. Our principal aim is to provide true tight-knit communities to students at Berkeley from all walks of life. The creation of a metaverse thus becomes just a tool to achieve this. </div>
           </div></Fade>
           <Fade delay={400} up><div className="box">
             <div className="icon"><img src={communitySVG}></img></div>
-            <div className="heading">Create</div>
-            <div className="description">Creating, deploying and testing metaverses to improve and redefine social life at Berkeley. By employing strategies of gamification, we aim to encourage students to meet and form smaller communities within the larger student body.</div>
+            <div className="heading">Exploration</div>
+            <div className="description">Innovation, exploration and creation is at the root of our culture. It is through relentless iteration that we aim to tackle complex phenomena such as community creation. New ideas are always welcomed.</div>
           </div></Fade>
           <Fade delay={800} up><div className="box">
             <div className="icon"><img src={communitySVG}></img></div>
-            <div className="heading">Exploration</div>
-            <div className="description">People will be grouped up in small groups of 5, called loops, and larger groups of 20, called houses (these numbers aren’t final). The loops and houses will attend fun events with each other, healthily compete and form communities.</div>
+            <div className="heading">Growth</div>
+            <div className="description">We strive to accompany every Berkeley student through the exciting, yet sometimes rocky experience that is entering University for the first time by providing a safe-space for personal growth and community.</div>
           </div></Fade>
         </div>
       </Slide>
@@ -91,17 +95,34 @@ const AfterMain = () => {
 
 const JoinSlide = () => {
 
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+  const currentMonth = currentDate.getMonth();
+  let currentSemester = "Spring";
+  if (currentMonth > 4) currentSemester = "Summer";
+  if (currentMonth >= 7) currentSemester = "Fall";
+
   return (
     <Slide>
       <div className="js" id="join">
+        {currentSemester != "Summer" && 
+          <div className="option">
+            <Fade right><a href="https://zubatomic.com/metaverse/redirect" target="_blank"><div className="link">Go to main site</div></a></Fade>
+            <div className="header">INTERESTED IN JOINING?</div>
+            <div className="subheader">Open to undergraduate students this <b>{currentSemester} {currentYear}</b>.</div>
+            <div className="text">Membership is open for {currentSemester.toLowerCase()}! Find a community at Berkeley, and have fun while doing so, by joining Metaverse@Berkeley. Membership is a right of every UC Berkeley student and thus joining is as simple as signing up. We will be holding our kickoff meeting soon, so be sure to sign up soon!</div>
+          </div>
+        }
+        {currentSemester == "Summer" && 
+          <div className="option">
+            <Fade right><a href="https://zubatomic.com/metaverse/redirect" target="_blank"><div className="link">Go to main site</div></a></Fade>
+            <div className="header">INTERESTED IN JOINING?</div>
+            <div className="subheader">Open to undergraduate students during <b>{currentYear}</b>.</div>
+            <div className="text">Membership will open during fall later this year. Find a community at Berkeley, and have fun while doing so, by joining Metaverse@Berkeley. Membership is a right of every UC Berkeley student and thus joining is as simple as signing up.</div>
+          </div>
+        }
         <div className="option">
-          <Fade right><div className="link">Go to main site</div></Fade>
-          <div className="header">INTERESTED IN JOINING?</div>
-          <div className="subheader">Open to undergraduate students at UC Berkeley.</div>
-          <div className="text">Find a community at Berkeley, and have fun while doing so, by joining Metaverse@Berkeley. Membership is a right of every UC Berkeley student and thus joining is as simple as signing up. Find a community at Berkeley, and have fun while doing so, by joining Metaverse@Berkeley. Membership is a right of every UC Berkeley student and thus joining is as simple as signing up.</div>
-        </div>
-        <div className="option">
-        <Fade right><div className="link">Go to officer site</div></Fade>
+        <Fade right><a href="https://road-message-514.notion.site/Become-an-officer-1ec0173227154930b79700ad7e3e14f2" target="_blank"><div className="link">Go to officer site</div></a></Fade>
           <div className="header">INTERESTED IN HELPING?</div>
           <div className="subheader">Apply to become an officer through the officer site.</div>
           <div className="text">Find a community at Berkeley, and have fun while doing so, by joining Metaverse@Berkeley. Membership is a right of every UC Berkeley student and thus joining is as simple as signing up. Find a community at Berkeley, and have fun while doing so, by joining Metaverse@Berkeley. Membership is a right of every UC Berkeley student and thus joining is as simple as signing up.</div>
