@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 // styles
 const pageStyles = {
-  color: "#232129",
+  color: "white",
   padding: "96px",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
@@ -45,7 +45,7 @@ const NotFoundPage = () => {
           </>
         ) : null}
         <br />
-        <Link to="/">Go home</Link>.
+        <Link to="/" style={{color: "#0099FF"}}>Go home</Link>.
       </p>
     </main>
   )
