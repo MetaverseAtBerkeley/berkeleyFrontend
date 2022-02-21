@@ -125,7 +125,7 @@ const JoinSlide = () => {
         <Fade right><a href="https://road-message-514.notion.site/Become-an-officer-1ec0173227154930b79700ad7e3e14f2" target="_blank"><div className="link">Go to officer site</div></a></Fade>
           <div className="header">INTERESTED IN HELPING?</div>
           <div className="subheader">Apply to become an officer through the officer site.</div>
-          <div className="text">Find a community at Berkeley, and have fun while doing so, by joining Metaverse@Berkeley. Membership is a right of every UC Berkeley student and thus joining is as simple as signing up. Find a community at Berkeley, and have fun while doing so, by joining Metaverse@Berkeley. Membership is a right of every UC Berkeley student and thus joining is as simple as signing up.</div>
+          <div className="text">We are always looking for extra hands to help us out constructing and running the metaverse. Officers are given limitless creative freedom, and have the opportunity to get hands-on experience running a real-world project. </div>
         </div>
       </div>
     </Slide>

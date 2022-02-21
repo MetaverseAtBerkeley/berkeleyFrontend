@@ -11,6 +11,7 @@ function Page(props) {
       <Helmet>
         <meta name="icon" href={logo} />
         <link rel="shortcut icon" type="image/png" href={logo} />
+        <title>Metaverse @ Berkeley</title>
       </Helmet>
       <Navbar></Navbar>
       <main {...props}></main>
