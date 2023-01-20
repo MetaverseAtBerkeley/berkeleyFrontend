@@ -19,7 +19,7 @@ function Footer() {
               <img className="iconImg" src={logo}></img>
             </div>
             <div className="orgName">
-              Metaverse @ Berkeley
+              Green Keys @ UChicago
             </div>
           </div>
           <div className="right">
@@ -29,7 +29,7 @@ function Footer() {
         </div>
         <div className="data">
           <div className="left">
-            © Metaverse@Berkeley {(new Date()).getFullYear()}. We are a student group acting independently of the University of California. We take full responsibility for our organization and this web site.
+            © Green Keys @ UChicago {(new Date()).getFullYear()}. We are a student group acting independently of the University of California. We take full responsibility for our organization and this web site.
           </div>
           <div className="right">
             <a href="https://www.ocf.berkeley.edu">

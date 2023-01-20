@@ -36,8 +36,8 @@ const LandingComponent = () => {
     <Slide>
       <div className="lc" id="home">
         <div className="left">
-          <div className="title"><Fade up>Metaverse @ Berkeley</Fade></div>
-          <div className="subtitle"><Fade delay={400} up>Creating the metaverse at UC Berkeley</Fade></div>
+          <div className="title"><Fade up>Green Keys @ UChicago</Fade></div>
+          <div className="subtitle"><Fade delay={400} up>Creating Green Keys Finance at UChicago</Fade></div>
           <Fade delay={800} up><div className="buttonParent">
             <a href="https://zubatomic.com/metaverse/redirect" target="_blank">
               <Blob>
@@ -63,22 +63,22 @@ const AfterMain = () => {
 
   return (
     <div className="am" style={{display: "flex", flexDirection: "column"}} id="mission">
-      <Wave color="#336ee2"/>
-      <Slide style={{backgroundColor: "#336ee2", paddingTop: "50px", paddingBottom: "50px"}}>
+      <Wave color="#00784A"/>
+      <Slide style={{backgroundColor: "#00784A", paddingTop: "50px", paddingBottom: "50px"}}>
         <div className="title">OUR MISSION</div>
         <div className="clubDescription"><Fade>
-        We aim to harness the power of the metaverse for positive social good and mental health. Through strategies of gamification, Metaverse @ Berkeley will encourage the growth of numerous communities inside Berkeley's large student population. Students searching to meet people and join a community will find a home at M@B. <br />
+        We aim to harness the power of the Finance for positive social good and mental health. Through strategies of Financial Planning, Modeling and Banking, Green Keys @ UChicago will serve as a hotspot for Financial learning inside UChicago's intelligent student population. Students searching to meet people and join a community will find a home at Green Keys. <br />
         </Fade></div>
         <div className="threeBoxes">
           <Fade up><div className="box">
             <div className="icon"><img src={communitySVG}></img></div>
             <div className="heading">Community</div>
-            <div className="description">We are a community-first organization. Our principal aim is to provide true tight-knit communities to students at Berkeley from all walks of life. The creation of a metaverse thus becomes just a tool to achieve this. </div>
+            <div className="description">We are a community-first organization. Our principal aim is to provide true tight-knit communities to students at UChicago from all walks of life. The creation of Green Keys thus becomes just a tool to achieve this. </div>
           </div></Fade>
           <Fade delay={400} up><div className="box">
             <div className="icon"><img src={communitySVG}></img></div>
             <div className="heading">Exploration</div>
-            <div className="description">Innovation, exploration and creation is at the root of our culture. It is through relentless iteration that we aim to tackle complex phenomena such as community creation. New ideas are always welcomed.</div>
+            <div className="description">Innovation, exploration and creation is at the root of our culture. It is through relentless iteration that we aim to tackle complex phenomena such as capital markets. New ideas are always welcomed.</div>
           </div></Fade>
           <Fade delay={800} up><div className="box">
             <div className="icon"><img src={communitySVG}></img></div>
@@ -87,7 +87,7 @@ const AfterMain = () => {
           </div></Fade>
         </div>
       </Slide>
-      <Wave color="#336ee2" end/>
+      <Wave color="#00784A" end/>
     </div>
   )
 
@@ -110,7 +110,7 @@ const JoinSlide = () => {
             <Fade right><a href="https://zubatomic.com/metaverse/redirect" target="_blank"><div className="link">Go to main site</div></a></Fade>
             <div className="header">INTERESTED IN JOINING?</div>
             <div className="subheader">Open to undergraduate students this <b>{currentSemester} {currentYear}</b>.</div>
-            <div className="text">Membership is open for {currentSemester.toLowerCase()}! Find a community at Berkeley, and have fun while doing so, by joining Metaverse@Berkeley. Membership is a right of every UC Berkeley student and thus joining is as simple as signing up. We will be holding our kickoff meeting soon, so be sure to sign up soon!</div>
+            <div className="text">Membership is open for {currentSemester.toLowerCase()}! Find a community at Berkeley, and have fun while doing so, by joining Green Keys@Uchicago. Membership is a right of every UC Berkeley student and thus joining is as simple as signing up. We will be holding our kickoff meeting soon, so be sure to sign up soon!</div>
           </div>
         }
         {currentSemester == "Summer" && 
@@ -118,7 +118,7 @@ const JoinSlide = () => {
             <Fade right><a href="https://zubatomic.com/metaverse/redirect" target="_blank"><div className="link">Go to main site</div></a></Fade>
             <div className="header">INTERESTED IN JOINING?</div>
             <div className="subheader">Open to undergraduate students during <b>{currentYear}</b>.</div>
-            <div className="text">Membership will open during fall later this year. Find a community at Berkeley, and have fun while doing so, by joining Metaverse@Berkeley. Membership is a right of every UC Berkeley student and thus joining is as simple as signing up.</div>
+            <div className="text">Membership will open during fall later this year. Find a community at Berkeley, and have fun while doing so, by joining Green Keys@UChicago. Membership is a right of every UC Berkeley student and thus joining is as simple as signing up.</div>
           </div>
         }
         <div className="option">
@@ -135,10 +135,10 @@ const JoinSlide = () => {
 
 const ContactSlide = () => {
   return (
-    <Slide style={{backgroundColor: "#336ee2"}} id="contact">
+    <Slide style={{backgroundColor: "#00784A"}} id="contact">
       <div className="cs">
         <div className="title">Contact us</div>
-        <div className="text">For all and any queries, contact <b>thecalmetaverse@gmail.com</b>.</div>
+        <div className="text">For all and any queries, contact <b>GreenKeysChicago@outlook.com</b>.</div>
       </div>
     </Slide>
   )
